@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teorema de Euclides</title>
+</head>
+<body>
+	<p id="parrafo1"></p>
+</body>
+<script type="text/javascript">
+		var a, b;
+		a=parseInt(prompt("introduzca el dividendo"));
+		b=parseInt(prompt("introduzca el divisor"));
+		var resultado=a/b;
+		var residuo=a%b;
+
+		while(residuo != 0){
+			a = b;
+			b = residuo;
+
+			resultado = a/b;
+			resultado=parseInt(resultado);
+
+			residuo = a%b;
+			console.log(a);
+			console.log(b);
+			console.log(resultado);
+			console.log(residuo);
+		}
+
+		document.getElementById("parrafo1").innerHTML = "El MCD es: "+b;
+</script>
+</html>
