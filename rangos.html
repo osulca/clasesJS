@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rangos</title>
+</head>
+<body>
+	<input type="number" id="numero" placeholder="Ingrese un numero"><br>
+	<button onclick="rango()">Determinar Rango</button>
+	<div id="mostrar"></div>
+</body>
+<script type="text/javascript">
+	function rango(){
+		var nro = parseInt(document.getElementById("numero").value);
+		if((nro < 20) || (nro > 400)){
+			document.getElementById("mostrar").innerHTML = "El nro se encuentra fuera de rango";	
+		}else{
+			if(nro >= 20 && nro <=100){
+				document.getElementById("mostrar").innerHTML = nro + " se encuentra entre 20 y 100";
+			}
+			if(nro >= 20 && nro <=400){
+				document.getElementById("mostrar").innerHTML += nro + " se encuentra entre 20 y 400";	
+			}
+		}
+	}
+</script>
+</html>

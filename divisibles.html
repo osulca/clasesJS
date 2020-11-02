@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numeros Divisibles</title>
+</head>
+<body>
+	<div id="respuesta"></div>
+	<script type="text/javascript">
+		var nro = prompt("Ingrese un nro");
+		var contador=0;
+
+			if(nro%2==0){
+				contador++;
+				document.getElementById("respuesta").innerHTML = nro + " Es divisible por 2";
+			}
+			else{
+				if(nro%3==0){
+				contador++;
+				document.getElementById("respuesta").innerHTML = nro + " Es divisible por 3";
+				}
+				else{
+					if(nro%5==0){
+					contador++;
+					document.getElementById("respuesta").innerHTML = nro + " Es divisible por 5";
+					}
+					else{
+						if(nro%7==0){
+						contador++;
+						document.getElementById("respuesta").innerHTML = nro + " Es divisible por 7";
+						}
+						else{
+							document.getElementById("respuesta").innerHTML = nro + " NO es divisible por 2,3,5 o 7";
+						}
+					}					
+				}				
+			}
+
+			
+
+
+	</script>
+</body>
+</html>
